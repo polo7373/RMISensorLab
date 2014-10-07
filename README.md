@@ -2,7 +2,9 @@ SensorLab
 =========
 
 L'objectif de ce TP est de transformer l'application SensorLab en une application client serveur.
-Dans l'application SensorLab, un capteur peut être démarré, arrété, consulté
+Dans l'application SensorLab, un capteur peut être démarré, arrété, consulté.
+
+Ce TP doit être réalisé en 4 heures. Les explications sont données avec le repository Github. Vous devez récupérer le code et faire le TP en vous aidant du cours et des ressources disponibles sur Internet. Pensez aux problèmes liés au Security Manager, au chargement du code et aux serveur de nom (RmiRegistry)
 
 ```
 public interface ISensor {
