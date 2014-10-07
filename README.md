@@ -4,11 +4,13 @@ SensorLab
 L'objectif de ce TP est de transformer l'application SensorLab en une application client serveur.
 Dans l'application SensorLab, un capteur peut être démarré, arrété, consulté
 
+```
 public interface ISensor {
     public double getValue() throws SensorNotActivated;
     public void onOff();
     public boolean getStatus();
 }
+```
 
 Un client peut se connecter à un capteur, modifier son état à distance.
 
