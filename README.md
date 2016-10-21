@@ -24,7 +24,4 @@ Les clients du capteurs veulent être notifiés chaque fois que le capteur est m
 * Adapter l'application en utilisant des callbacks pour que les clients reçoivent ces notifications. 
 Il s'agit de mettre en place une architecture client serveur en MVC.
 
-Pour pouvoir travailler, commencez par faire un Pull sur ce repository. Vous pourrez le modifier et le publier dans
-votre propre repository ensuite.
-
-
+Pour pouvoir travailler, commencez par faire un Pull sur ce repository. Vous pourrez le modifier et le publier dans votre propre repository ensuite.

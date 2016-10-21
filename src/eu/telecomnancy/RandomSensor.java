@@ -7,6 +7,7 @@ package eu.telecomnancy;
 import java.util.Random;
 import java.rmi.RemoteException;
 
+
 /**
  *
  * @author charoy

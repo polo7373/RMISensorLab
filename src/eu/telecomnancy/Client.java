@@ -20,7 +20,9 @@ public class Client {
         sense=sensor;
     }
     
+
     public void menu() throws RemoteException {
+
         String rep="";
         while (!"q".equals(rep)) {
             try {
