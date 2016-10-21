@@ -5,6 +5,7 @@
 package eu.telecomnancy;
 
 import java.util.Random;
+import java.rmi.RemoteException;
 
 /**
  *
@@ -16,7 +17,7 @@ public class RandomSensor implements ISensor {
         double end = 100;
     
     @Override
-    public double getValue() throws SensorNotActivated {
+    public double getValue() throws SensorNotActivated, RemoteException {
         if (status) {
          double random = new Random().nextDouble();
         return start + (random * (end - start));    
@@ -24,12 +25,12 @@ public class RandomSensor implements ISensor {
     }
 
     @Override
-    public void onOff() {
+    public void onOff() throws RemoteException {
         status=!status;
     }
 
     @Override
-    public boolean getStatus() {
+    public boolean getStatus() throws RemoteException {
         return status;
     }
     

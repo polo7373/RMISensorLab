@@ -4,6 +4,7 @@
  */
 package eu.telecomnancy;
 
+import java.rmi.RemoteException;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,7 +20,7 @@ public class Client {
         sense=sensor;
     }
     
-    public void menu() {
+    public void menu() throws RemoteException {
         String rep="";
         while (!"q".equals(rep)) {
             try {

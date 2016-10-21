@@ -4,6 +4,11 @@
  */
 package eu.telecomnancy;
 
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.RemoteException;
+import java.rmi.NotBoundException;
+
 /**
  *
  * @author charoy
@@ -14,8 +19,17 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ISensor s=new RandomSensor();
-        Client c=new Client(s);
-        c.menu();
+    	System.out.println("Test");
+    	
+    	try {
+    		Registry r = LocateRegistry.getRegistry(7373);
+    		ISensor s = (ISensor) r.lookup("sensor");
+    		Client c=new Client(s);
+            c.menu();
+    	} catch (RemoteException e){
+    		e.printStackTrace();
+    	} catch (NotBoundException e){
+    		e.printStackTrace();
+    	}
     }
 }

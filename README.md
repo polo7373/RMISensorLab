@@ -25,4 +25,6 @@ Les clients du capteurs veulent être notifiés chaque fois que le capteur est m
 Il s'agit de mettre en place une architecture client serveur en MVC.
 
 Pour pouvoir travailler, commencez par faire un Pull sur ce repository. Vous pourrez le modifier et le publier dans
-votre propre repository ensuite. 
+votre propre repository ensuite.
+
+
