@@ -4,6 +4,8 @@
  */
 package eu.telecomnancy;
 
+import java.rmi.Naming;
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -13,7 +15,7 @@ import java.util.logging.Logger;
  *
  * @author charoy
  */
-public class Client {
+public class Client implements Remote {
     ISensor sense;
     Scanner c=new Scanner(System.in);
     public Client(ISensor sensor) {

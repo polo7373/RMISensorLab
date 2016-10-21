@@ -24,6 +24,8 @@ public class Main {
     		Registry r = LocateRegistry.getRegistry(7373);
     		ISensor s = (ISensor) r.lookup("sensor");
     		Client c=new Client(s);
+    		s.addSensorListener(c);
+    		
             c.menu();
     	} catch (RemoteException e){
     		e.printStackTrace();

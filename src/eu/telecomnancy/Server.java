@@ -7,7 +7,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 public class Server {
-	public static void main(String[] Args){
+	public static void main(String[] Args) throws RemoteException{
 		System.out.println("Starting Server");
 		ISensor s = new RandomSensor();
 		try {
